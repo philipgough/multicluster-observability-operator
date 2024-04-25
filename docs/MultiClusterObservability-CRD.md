@@ -2,7 +2,9 @@
 
 ## Description
 
-MultiClusterObservability API is the interface to manage the MultiClusterObservability Operator which deploys and manages the Observability components on the RHACM Hub Cluster. MultiClusterObservability is a cluster scoped CRD. The short name is MCO.
+MultiClusterObservability API is the interface to manage the MultiClusterObservability Operator which deploys and 
+manages the Observability components on the RHACM Hub Cluster. 
+MultiClusterObservability is a cluster scoped CRD. The short name is MCO.
 
 ## API Version
 

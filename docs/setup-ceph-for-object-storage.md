@@ -1,9 +1,17 @@
 ## Install Ceph deployment
 
 ## Background
-[Ceph](https://docs.ceph.com/en/latest/start/intro/) can be installed in commodity hardware and can provide scalable Object Storage, Block Storage and Filesystem. For ACM Observability, we only focus on Object Storage. Object Storage. [Ceph Object Gateway](https://docs.ceph.com/en/latest/radosgw/) is an object storage interface built on top of librados to provide applications with a RESTful gateway to Ceph Storage Clusters. Ceph Object Storage supports two interfaces:
-- S3-compatible: Provides object storage functionality with an interface that is compatible with a large subset of the Amazon S3 RESTful API.
 
+[Ceph](https://docs.ceph.com/en/latest/start/intro/) can be installed in commodity hardware and can provide 
+scalable Object Storage, Block Storage and Filesystem. 
+
+For ACM Observability, we only focus on Object Storage. 
+
+[Ceph Object Gateway](https://docs.ceph.com/en/latest/radosgw/) is an object storage interface which 
+provides applications with a RESTful gateway to Ceph Storage Clusters.
+
+Ceph Object Storage supports two interfaces:
+- S3-compatible: Provides object storage functionality with an interface that is compatible with a large subset of the Amazon S3 RESTful API.
 - Swift-compatible: Provides object storage functionality with an interface that is compatible with a large subset of the OpenStack Swift API.
 
 For ACM Observability feature, we are only interested in S3-compatible interface.
@@ -198,5 +206,6 @@ config:
   secret_key: awkEbItAs6OXsbOC6Qk7SX45h01GSw51z9SDasBI
 ```
 
-### Proceed with installation of ACM Observbility
-Then you can be following these steps to deploy multicluster-observability-operator: https://github.com/stolostron/multicluster-observability-operator#install-this-operator-on-rhacm
+### Proceed with installation of ACM Observability
+Then you can be following these steps to deploy multicluster-observability-operator
+* https://github.com/stolostron/multicluster-observability-operator#install-this-operator-on-rhacm

@@ -14,24 +14,22 @@ kind is ObservabilityAddon
 
 **ObservabilityAddon Spec**: the specification and status for the metrics collector in one managed cluster
 
-name | description | required | default | schema
----- | ----------- | -------- | ------- | ------
-enableMetrics | Push metrics or not | no | true | bool
-metricsConfigs| Metrics collection configurations | no | n/a | MetricsConfigs
-
+| name           | description                       | required | default | schema         |
+|----------------|-----------------------------------|----------|---------|----------------|
+| enableMetrics  | Push metrics or not               | no       | true    | bool           |
+| metricsConfigs | Metrics collection configurations | no       | n/a     | MetricsConfigs |
 
 **MetricsConfigs Spec**: the specification for metrics collected  from local prometheus and pushed to hub server
 
-name | description | required | default | schema
----- | ----------- | -------- | ------- | ------
-interval | Interval for the metrics collector push metrics to  hub server| no | 1m | string
-
+| name     | description                                                    | required | default | schema |
+|----------|----------------------------------------------------------------|----------|---------|--------|
+| interval | Interval for the metrics collector push metrics to  hub server | no       | 1m      | string |
 
 **ObservabilityAddon Status**: the status for current CR. It's updated by the metrics collector
 
-name | description | required | default | schema
----- | ----------- | -------- | ------- | ------
-status | Status contains the different condition statuses for this managed cluster | n/a | [] | []Condtions
+| name   | description                                                               | required | default | schema      |
+|--------|---------------------------------------------------------------------------|----------|---------|-------------|
+| status | Status contains the different condition statuses for this managed cluster | n/a      | []      | []Condtions |
 
 **Conditions**
 type | reason | message

@@ -12,20 +12,19 @@ Your results might vary, depending on your environment, network speed, and chang
 In the test environment, hub and managed clusters are located in Amazon Web Services cloud platform and have the same topology/configuration as below:
 
 
-Node | Flavor	| vCPU	| RAM (GiB)	| Disk type	| Disk size(GiB)/IOS	| Count	| Region
----  | ------ | ----  | --------- | --------- | ------------------  | ----- | ------ 
-Master | m5.4xlarge | 16 |64 | gp2 | 100 | 3 | sa-east-1
-Worker | m5.4xlarge | 16 |64 | gp2 | 100 | 3 | sa-east-1
+| Node   | Flavor	    | vCPU	 | RAM (GiB)	 | Disk type	 | Disk size(GiB)/IOS	 | Count	 | Region    |
+|--------|------------|-------|------------|------------|---------------------|--------|-----------|
+| Master | m5.4xlarge | 16    | 64         | gp2        | 100                 | 3      | sa-east-1 |
+| Worker | m5.4xlarge | 16    | 64         | gp2        | 100                 | 3      | sa-east-1 |
 
 For the observability deployment, it uses the "High" for availabilityConfig, which means for each kubernetes deployment has 2 instances and each statefulset has 3 instances.
 
 During the test, different number of managed clusters will be simulated to push metrics and each test will last for 24 hours.
 Throughput for each managed cluster is as below:
 
-Pods | Interval(minute) | Time series per min
----- | ---------------- | -------------------
-400 | 1 | 83000
-
+| Pods | Interval(minute) | Time series per min |
+|------|------------------|---------------------|
+| 400  | 1                | 83000               |
 
 ## CPU
 During test, CPU usage keeps stable

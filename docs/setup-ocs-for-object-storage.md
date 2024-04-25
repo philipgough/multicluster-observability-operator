@@ -1,6 +1,7 @@
 ## Install the OpenShift Container Storage
 
-Following this guide to install the OpenShift Container Storage to your cluster: https://access.redhat.com/documentation/en-us/red_hat_openshift_container_storage/4.4/html/deploying_openshift_container_storage/deploying-openshift-container-storage-on-openshift-container-platform_rhocs#installing-openshift-container-storage-operator-using-the-operator-hub_aws-vmware
+Following this guide to install the OpenShift Container Storage to your cluster
+* https://access.redhat.com/documentation/en-us/red_hat_openshift_container_storage/4.4/html/deploying_openshift_container_storage/deploying-openshift-container-storage-on-openshift-container-platform_rhocs#installing-openshift-container-storage-operator-using-the-operator-hub_aws-vmware
 
 ## Accessing object storage configuration
 
